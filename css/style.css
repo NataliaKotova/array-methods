@@ -1,0 +1,9 @@
+.jumbotron {
+    background-color:lavender !important; 
+}
+.join, .split, .toString {
+    background-color:	mediumseagreen;
+}
+.joinInfo, .splitInfo, .toStringInfo {
+    height: 10em;
+}

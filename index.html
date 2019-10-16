@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+      <h2 class="text-center mt-2 mb-5">Array methods: join, split, toString</h2>
+    <div class="row ml-2 mr-2">
+      <!-- join -->
+        <div class="col-xl-4">
+          <div style = "height:10em">
+              <h3 class="join text-center">join</h3>
+              <a href="https://www.w3schools.com/jsref/jsref_join.asp">w3schools</a>
+              <span class = "joinInfo" id="joinInfo">The join() method returns the array as a string.
+                  The elements will be separated by a specified separator. The default separator is comma (,).
+                  Note: this method will not change the original array.</span>
+          </div>
+          <div align="center">
+              <button type="button" class="btn btn-outline-success mb-2 mt-2" onclick="joinMethod(fruits)">Use join method with " and " separator</button>
+          </div>
+          <h5>var fruits = ["Banana", "Orange", "Apple", "Mango"];</h5>
+          <h5 id="joinResult"></h5>
+        </div>
+      <!-- toString -->
+        <div class="col-xl-4">
+          <div style = "height:10em">
+              <h3 class="toString text-center">toString</h3>
+              <a href="https://www.w3schools.com/jsref/jsref_tostring_array.asp">w3schools</a>
+              <span id="toStringInfo">The toString() method returns a string with all the array values, separated by commas.
+                Note: This method will not change the original array.</span>
+          </div>
+          <div align="center">
+            <button type="button" class="btn btn-outline-success mb-2 mt-2" onclick="toStringMethod(fruits)">Use toString method</button>  
+          </div>
+          <h5>var fruits = ["Banana", "Orange", "Apple", "Mango"];</h5>
+          <h5 id="toStringResult"></h5>
+        </div>
+      <!-- split -->
+        <div class="col-xl-4">
+          <div style = "height:10em">
+            <h3 class="split text-center">split</h3>
+            <a href="https://www.w3schools.com/jsref/jsref_split.asp">w3schools</a>
+            <span id="splitInfo">The split() method is used to split a string into an array of substrings, and returns the new array.
+                Tip: If an empty string ("") is used as the separator, the string is split between each character.
+                Note: The split() method does not change the original string.</span>
+          </div>
+          <div align="center">
+            <button type="button" class="btn btn-outline-success mb-2 mt-2" onclick="splitMethod(string)">Use split method</button>
+          </div>
+          <h5>var string = "How are you doing today?";</h5>
+          <h5 id="splitResult"></h5>
+        </div>
+
+     
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
